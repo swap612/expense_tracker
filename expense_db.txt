@@ -1,0 +1,5 @@
+Pizza	Food	100
+McD Burger	Food	150
+Mobile	Devices	30000
+Carrom	Entertainment	1000
+Saree	Clothing	2500
