@@ -3,3 +3,10 @@ McD Burger	Food	150
 Mobile	Devices	30000
 Carrom	Entertainment	1000
 Saree	Clothing	2500
+Pizza	Food	400
+Books	Books	500
+Mousse	Electronics	600
+Keyboard	Electronics	1000
+Bottle	Food	20
+Cake	Food	550
+Pen	Stationary	5
