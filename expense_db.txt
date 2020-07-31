@@ -10,3 +10,6 @@ Keyboard	Electronics	1000
 Bottle	Food	20
 Cake	Food	550
 Pen	Stationary	5
+Laptop	Electronics	45000
+Jeans	Clothing	1800
+Shirt	Clothing	1200

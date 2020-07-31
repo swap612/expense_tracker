@@ -33,10 +33,10 @@ sub add_exp{
         chomp $exp_amt;
 
         my @exp = ($exp_tit, $exp_cat, $exp_amt);
-        print "@exp";
+	#print "@exp";
         my $exp_entry= join "\t",@exp;
-        print "Entry: $exp_entry";
-        print "Adding the Entry {Tit:$exp_tit Cat:$exp_cat Amt:$exp_amt}";
+	#        print "Entry: $exp_entry";
+        print "Adding the Entry {Title:$exp_tit Category:$exp_cat Amount:$exp_amt}";
 
         open FH, '>>', $file or die $!;
         print FH $exp_entry;
@@ -84,7 +84,7 @@ sub show_exp{
 
 print "Your Expense Tracker System.\nEnter your choice \n1. Add Expense \n2. Expense Report \n3. Reset the Expense Tracking";
 my $ch = int(<STDIN>);
-print $ch;
+#print $ch;
 
 if($ch == 1){
 	add_exp;
