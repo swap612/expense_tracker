@@ -47,6 +47,7 @@ sub add_exp{
 sub show_exp{
 	printf "|%15s|%15s|%10s|\n", 'Item','Category','Amount';
 	print "|------------------------------------------|";
+	my $total=int(0);
 	open FH, '<', $file or die $!; 
 	while( <FH>){
 		#print $_;
@@ -55,11 +56,18 @@ sub show_exp{
 		my $cat = shift @exp_entry;
 		my $amt = shift @exp_entry;
 		chomp $amt;
+		$total+=int ($amt);
 	        printf "|%15s|%15s|%10s|", $tit,$cat,$amt;
 
 	print "";
 	}
 	close FH;
+
+	print "|------------------------------------------|";
+        printf "|%15s|%15s|%10s| \n", 'Total',"",$total;
+	print "|------------------------------------------|";
+	#	print "Category Wise Distribution\n"
+
 }
 
 print "Your Expense Tracker System.\nEnter your choice \n1. Add Expense \n2. Expense Analysis \n3. Reset the Expense Tracking";
