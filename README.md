@@ -4,5 +4,5 @@ Expense tracker app to manage all your expense details and give you statistical 
 ## Usage
 perl expense\_tracker.pl 
 
-###NOTE
+### NOTE
 We have used the *expense\_db.txt* to store the data, so please don't edit it.
